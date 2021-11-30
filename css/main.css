@@ -102,9 +102,6 @@ html {
 body{
   font-family: "Century Gothic Std", sans-serif;
   text-transform: uppercase;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 
 h1{
@@ -122,6 +119,10 @@ p, .skills ul li{
   line-height: 1.5em;
 }
 
+ul{
+  margin: 0;
+  list-style-type:none;
+}
 
 /****************HEADER AND FOOTER*************************/
 header,
@@ -174,7 +175,7 @@ footer .content-wrapper{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 footer .copyright{
@@ -199,27 +200,70 @@ footer .icon{
   min-height: 300px;
 }
 
-.hero .content-wrapper{
-  display: flex;
-}
-
 
 /****************ABOUT SECTION*************************/
 #about {
   display: flex;
   flex-flow: row wrap;
-}
-
-#about .about-content, #about .skills{
-  display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
 }
 
+#about .about-content h1, #about .skills h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#about .about-content p{
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+#about .about-content p br{
+  padding-bottom: 30px;
+}
+
+#about .skills ul{
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+#about .skills .call-to-action{
+  padding-bottom: 0;
+}
 
 /****************CONTACT SECTION*************************/
 
+#contact{
+  display: flex;
+  flex-flow: row wrap;
+}
+.contact-content h1{
+  text-align:center;
+  padding-bottom: 20px;
+}
+.contact-content address{
+  font-style: normal;
+}
 
+.contact-content p{
+  margin: 0;
+}
+
+.contact-content address .email{
+  margin-bottom: 10px;
+}
+
+.form{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.form input{
+  width: 55%;
+}
 
 
 
