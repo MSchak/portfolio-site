@@ -87,6 +87,142 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/*************Global Styles**************/
+
+html {
+  font-size: 16px;
+}
+
+.content-wrapper{
+  width:90%;
+  margin: 20px;
+}
+
+body{
+  font-family: "Century Gothic Std", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+h1{
+  font-size: 1.25em;
+  margin: 0;
+}
+
+nav li{
+  font-size: 1em;
+  margin: 0;
+}
+
+p, .skills ul li{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+
+/****************HEADER AND FOOTER*************************/
+header,
+footer, 
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+/****************Header*************************/
+
+header .content-wrapper{
+  flex-flow: row wrap;
+}
+
+header div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+header nav ul{
+  display: flex;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px auto 0 auto;
+}
+
+header nav ul li{
+  list-style-type: none;
+}
+/****************Footer*************************/
+
+footer{
+  width: 100%;
+}
+
+footer .content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+footer .copyright{
+  font-size: 10px;
+  margin: 0;
+}
+
+footer .icon{
+  padding: 0 10px;
+}
+
+/****************HERO SECTION*************************/
+
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-image: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+}
+
+.hero .content-wrapper{
+  display: flex;
+}
+
+
+/****************ABOUT SECTION*************************/
+#about {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#about .about-content, #about .skills{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+/****************CONTACT SECTION*************************/
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
