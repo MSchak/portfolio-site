@@ -110,6 +110,11 @@ h1{
   margin: 0;
 }
 
+h2{
+  font-size: 1.125em;
+  margin: 10px auto 0 auto;
+}
+
 nav li{
   font-size: 1em;
   margin: 0;
@@ -125,13 +130,15 @@ ul{
   list-style-type:none;
 }
 
+a{
+  text-decoration: none;
+}
+
 /****************Mobile Styles: HEADER AND FOOTER*************************/
 header,
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 /****************Mobile Styles: Header*************************/
 
@@ -167,7 +174,13 @@ footer .content-wrapper{
 footer .copyright{
   font-size: 10px;
   margin: 0;
+  width: 100%;
+  text-align: center;
 }
+footer .copyright p{
+  margin: 0;
+}
+
 
 footer .icon{
   padding: 0 10px;
@@ -249,43 +262,33 @@ footer .icon{
 
 /****************Mobile Styles: PORTFOLIO PAGE*************************/
 
+.portfolio-section {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-section h1, .port-link{
+  text-align: center;
+}
+.portfolio-section h2{
+  text-align: center;
+}
+
+.portfolio-section p{
+  margin: 10px auto;
+}
+.portfolio-section .content a{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio-img{
   width: 75%; 
   margin: 20px;
 }
 
-/* ==========================================================================
-   Tablet Styles
-   ========================================================================== */
-
-/*************Tablet Styles: Global Styles**************/
-/*************Tablet Styles: HEADER AND FOOTER**************/
-/*************Tablet Styles: Header**************/
-/*************Tablet Styles: Footer**************/
-/*************Tablet Styles: HERO SECTION**************/
-
-/*************Tablet Styles: ABOUT SECTION**************/
-
-/*************Tablet Styles: CONTACT SECTION**************/
-/****************Mobile Styles: PORTFOLIO PAGE*************************/
-
-
-
-
-/* ==========================================================================
-   Desktop Styles
-   ========================================================================== */
-
-/*************Desktop Styles: Global Styles**************/
-/*************Desktop Styles: HEADER AND FOOTER**************/
-/*************Desktop Styles: Header**************/
-/*************Desktop Styles: Footer**************/
-/*************Desktop Styles: HERO SECTION**************/
-
-/*************Desktop Styles: ABOUT SECTION**************/
-
-/*************Desktop Styles: CONTACT SECTION**************/
-/****************Mobile Styles: PORTFOLIO PAGE*************************/
 
 /* ==========================================================================
    Helper classes
@@ -375,16 +378,142 @@ footer .icon{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+
+/* ==========================================================================
+   Tablet Styles
+   ========================================================================== */
+
+/*************Tablet Styles: Global Styles**************/
+
+h1{
+  font-size: 1.5em;
+  margin: 0;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+h2{
+  font-size: 1.25em;
+  margin: 10px auto 0 auto;
 }
+
+nav li{
+  font-size: 1.125em;
+}
+
+p, .skills ul li{
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+
+/*************Tablet Styles: Header**************/
+
+header .content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  font-size: 1.125em;
+  padding-bottom: 0;
+}
+
+header nav ul{
+  margin: 0;
+}
+
+header nav ul li{
+  margin-left: 20px;
+}
+/*************Tablet Styles: Footer**************/
+
+footer .content-wrapper{
+  align-items: center;
+}
+footer .copyright{
+  width: 50%;
+  text-align: right;
+}
+
+/*************Tablet Styles: HERO SECTION**************/
+
+.hero h1{
+  width: 60%;
+}
+
+.hero .content-wrapper{
+  margin-left: 60px;
+}
+
+/*************Tablet Styles: ABOUT SECTION**************/
+
+#about .content-wrapper{
+  margin-left: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#about article{
+  width: 40%;
+}
+#about .about-content h1, #about .skills h1{
+  text-align: left;
+}
+
+#about .skills ul {
+  text-align: left;
+}
+
+#about h1{
+  width: 100%;
+  text-align: center;
+}
+
+/*************Tablet Styles: CONTACT SECTION**************/
+#contact .content-wrapper{
+  margin-left: 60px;
+}
+/****************Mobile Styles: PORTFOLIO PAGE*************************/
+
+}
+@media only screen and (min-width: 1200px){
+
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
+
+/*************Desktop Styles: Global Styles**************/
+h1{
+  font-size: 1.75em;
+  margin: 0;
+}
+
+h2{
+  font-size: 1.5em;
+  margin: 10px auto 0 auto;
+}
+
+nav li{
+  font-size: 1.5em;
+}
+
+p, .skills ul li{
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+
+/*************Desktop Styles: HEADER AND FOOTER**************/
+/*************Desktop Styles: Header**************/
+/*************Desktop Styles: Footer**************/
+/*************Desktop Styles: HERO SECTION**************/
+
+/*************Desktop Styles: ABOUT SECTION**************/
+
+/*************Desktop Styles: CONTACT SECTION**************/
+/****************Mobile Styles: PORTFOLIO PAGE*************************/
+}
+
 
 /* ==========================================================================
    Print styles.
