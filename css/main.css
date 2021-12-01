@@ -177,6 +177,10 @@ footer .content-wrapper{
   margin: 0;
 }
 
+footer .connect{
+  display: flex;
+}
+
 footer .copyright{
   font-size: 10px;
   margin: 0;
@@ -187,9 +191,8 @@ footer .copyright p{
   margin: 0;
 }
 
-
 footer .icon{
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 /****************Mobile Styles: HERO SECTION*************************/
@@ -456,6 +459,7 @@ header nav ul li{
 
 footer .content-wrapper{
   align-items: center;
+  justify-content: space-between;
 }
 footer .copyright{
   width: 50%;
@@ -605,6 +609,10 @@ header h1 {
   font-size: 1.5em;
 }
 /*************Desktop Styles: Footer**************/
+
+footer .icon {
+  padding: 0 0 0 10px;
+}
 /*************Desktop Styles: HERO SECTION**************/
 
 .hero{
