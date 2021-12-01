@@ -250,13 +250,17 @@ footer .icon{
   margin-bottom: 10px;
 }
 
-.form{
-  width: 100%;
-  padding-top: 20px;
-  margin-left: 25%;
+#contact .form p{
+  text-align: center;
 }
 
-.form input{
+#contact .form{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#contact .form input{
   width: 55%;
 }
 
@@ -269,6 +273,10 @@ footer .icon{
 
 .portfolio-section h1, .port-link{
   text-align: center;
+}
+
+.portfolio-section .port-link{
+  width: 100%;
 }
 .portfolio-section h2{
   text-align: center;
@@ -284,8 +292,9 @@ footer .icon{
   align-items: center;
 }
 
-.portfolio-img{
-  width: 75%; 
+.portfolio-section .portfolio-img{
+  width: 80%; 
+  max-width: 350px;
   margin: 20px;
 }
 
@@ -393,7 +402,8 @@ h1{
 
 h2{
   font-size: 1.25em;
-  margin: 10px auto 0 auto;
+  margin: 10px auto;
+  width: 100%;
 }
 
 nav li{
@@ -410,7 +420,6 @@ p, .skills ul li{
 header .content-wrapper{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 header h1{
@@ -470,11 +479,59 @@ footer .copyright{
   text-align: center;
 }
 
+#about .call-to-action{
+  text-align: left;
+}
+
 /*************Tablet Styles: CONTACT SECTION**************/
 #contact .content-wrapper{
   margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/****************Mobile Styles: PORTFOLIO PAGE*************************/
+#contact h1{
+  text-align: left;
+}
+#contact .contact-content{
+  width: 50%;
+}
+
+#contact .form{
+  width: 50%;
+}
+
+#contact p{
+  font-size: 1em;
+}
+/****************Tablet Styles: PORTFOLIO PAGE*************************/
+
+.portfolio-section h1{
+  text-align: left;
+}
+
+.portfolio-section .content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio-section .content h2{
+  text-align: left;
+}
+
+
+.portfolio-section .portfolio-items{
+  max-width: 50%;
+}
+
+.portfolio-section .portfolio-img{
+  max-width: 500px;
+}
+
+.portfolio-section .port-link {
+  margin-top: 20px;
+}
 
 }
 @media only screen and (min-width: 1200px){
@@ -505,16 +562,36 @@ p, .skills ul li{
 
 /*************Desktop Styles: HEADER AND FOOTER**************/
 /*************Desktop Styles: Header**************/
+header h1 {
+  font-size: 1.5em;
+}
 /*************Desktop Styles: Footer**************/
 /*************Desktop Styles: HERO SECTION**************/
 
-/*************Desktop Styles: ABOUT SECTION**************/
-
-/*************Desktop Styles: CONTACT SECTION**************/
-/****************Mobile Styles: PORTFOLIO PAGE*************************/
+.hero h1{
+  width: 50%;
 }
 
+/*************Desktop Styles: ABOUT SECTION**************/
 
+#about .call-to-action{
+  text-align: center;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+/*************Desktop Styles: CONTACT SECTION**************/
+
+#contact .form p{
+  width: 100%;
+}
+/****************Desktop Styles: PORTFOLIO PAGE*************************/
+
+.portfolio-section .portfolio-items{
+  max-width: 33%;
+}
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
