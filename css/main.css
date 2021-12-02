@@ -136,6 +136,10 @@ a{
   color: #585858;
 }
 
+a:hover{
+  color: lightgrey;
+}
+
 .white-txt{
   color: white;
 }
@@ -206,7 +210,6 @@ footer .icon{
   background-repeat: no-repeat;
   background-position: center;
   min-height: 300px;
-  color: lightgrey;
 }
 
 .hero h1{
@@ -260,65 +263,69 @@ footer .icon{
 }
 .contact-content address{
   font-style: normal;
+  margin-top: 10px;
 }
 
 .contact-content p{
   margin: 0;
 }
 
-.contact-content address .email{
-  margin-bottom: 10px;
-}
-
-#contact .form p{
-  text-align: center;
-}
-
-#contact .form{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-#contact .form input{
-  width: 55%;
-}
-
 /****************Mobile Styles: PORTFOLIO PAGE*************************/
 
-.portfolio-section {
+.portfolio-intro {
   display: flex;
   justify-content: center;
-  background: #585858;
+  background: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #585858;
+  padding: 20px 0;
 }
 
-.portfolio-section h1, .port-link{
+.portfolio-content h1, .port-link{
   text-align: center;
 }
 
-.portfolio-section .port-link{
+.portfolio-content .port-link{
   width: 100%;
 }
-.portfolio-section h2{
+.portfolio-content h2{
   text-align: center;
 }
 
-.portfolio-section p{
+.portfolio-content p{
   margin: 10px auto;
 }
-.portfolio-section .content a{
+.portfolio-content a{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-.portfolio-section .portfolio-img{
+.portfolio-content .portfolio-img{
   width: 80%; 
   max-width: 350px;
   margin: 20px;
+  box-shadow: 5px 5px 8px black;
+  opacity: 0.7;
+  border-radius: 2%;
 }
 
+.portfolio-content .portfolio img .mouseover{
+  width: 90%;
+  max-width: 400px;
+  opacity: 1.0;
+}
+
+.portfolio-footer{
+  background-color: #585858;
+}
+
+.portfolio-footer a{
+  color: white;
+}
 
 /* ==========================================================================
    Helper classes
@@ -535,45 +542,54 @@ footer .copyright{
   width: 50%;
 }
 
-#contact .form{
-  width: 50%;
-}
-
-#contact p{
-  font-size: 1em;
-}
 /****************Tablet Styles: PORTFOLIO PAGE*************************/
 
-.portfolio-section{
-  padding-top: 40px;
-  padding-bottom: 40px;
+.portfolio-intro{
+  padding: 40px 0;
 }
 
-.portfolio-section h1{
-  text-align: left;
+.portfolio-intro .content-wrapper{
+  margin-left: 60px;
 }
 
-.portfolio-section .content{
+.portfolio-content{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-content .content-wrapper{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  margin-left: 60px;
+
 }
 
-.portfolio-section .content h2{
+.portfolio-content h1{
+  text-align: left;
+}
+
+.portfolio-content h2{
   text-align: left;
 }
 
 
-.portfolio-section .portfolio-items{
+.portfolio-content .portfolio-items{
   max-width: 50%;
 }
 
-.portfolio-section .portfolio-img{
+.portfolio-content .portfolio-img{
   max-width: 500px;
 }
 
-.portfolio-section .port-link {
-  margin-top: 20px;
+.portfolio-content .port-link {
+  margin-top: 40px;
+  margin-bottom
+}
+
+.portfolio-content .portfolio img .mouseover{
+  max-width: 600px;
 }
 
 }
@@ -645,16 +661,17 @@ footer .icon {
   margin-left: 80px;
 }
 
-#contact .form p{
-  width: 100%;
-}
 /****************Desktop Styles: PORTFOLIO PAGE*************************/
 
-.portfolio-section .content-wrapper{
+.portfolio-intro .content-wrapper{
   margin-left: 80px;
 }
 
-.portfolio-section .portfolio-items{
+.portfolio-content .content-wrapper{
+  margin-left: 80px;
+}
+
+.portfolio-content .portfolio-items{
   max-width: 33%;
 }
 
